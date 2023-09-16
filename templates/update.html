@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h2 class="mb-3">Update Todo</h2>
+<form action="{{ url_for('update_todo', todo_id=todo.id) }}" method="post">
+    {{ form.hidden_tag() }}
+    <div class="form-group">
+        {{ form.description.label }}
+        {{ form.description(class="form-control") }}
+    </div>
+    {{ form.submit(class="btn btn-primary") }}
+</form>
+{% endblock %}
