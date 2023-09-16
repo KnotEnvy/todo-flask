@@ -37,7 +37,8 @@ def update_todo(todo_id):
         return redirect(url_for('index'))
     elif request.method == 'GET':
         form.description.data = todo.description
-    return render_template('update.html', form=form)
+    return render_template('update.html', form=form, todo=todo)
+
 
 @app.route('/delete/<int:todo_id>')
 def delete_todo(todo_id):
