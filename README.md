@@ -2,7 +2,7 @@
 
 A sleek and responsive Todo list application built using Flask, perfect for jotting down tasks and ensuring productivity.
 
-![App video](https://youtube.com/shorts/hiUC6bZa_Ck)  
+<video width="630" height="300" src="https://youtube.com/shorts/hiUC6bZa_Ck"></video>
 
 #### Features
 
